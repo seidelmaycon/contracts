@@ -1,9 +1,8 @@
 # frozen_string_literal: true
 
-require "rails_helper"
+require 'rails_helper'
 
 RSpec.describe ContractsController, type: :controller do
-
   describe '#index' do
     let(:user) { FactoryBot.create(:user) }
     let!(:user_contract) { FactoryBot.create(:contract, user: user) }
