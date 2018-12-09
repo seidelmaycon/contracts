@@ -1,0 +1,52 @@
+a:link {
+  text-decoration: none;
+}
+b {
+  font-size: 14px;
+  color: #3b3c43;
+}
+
+span {
+  font-size: 18px;
+  color: #3b3c43;
+}
+
+.contracts {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contract {
+  display: flex;
+  border: 1px solid #3b3c43;
+  margin-bottom: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  color: #fff;
+  background-color: #c0c4cf;
+  border-radius: .25rem;
+  font-weight: bold;
+  color: #3b3c43;
+  padding: 10px 30px 10px 30px;
+  margin: 10px;
+  margin-bottom: 40px;
+  text-decoration: none;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}

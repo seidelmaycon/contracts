@@ -1,0 +1,9 @@
+h1.text-center My contracts
+
+.center
+  = link_to "ADD CONTRACT", new_contract_path, class: 'btn text-center'
+
+.contracts
+  - if @contracts.empty?
+    p No contracts yet. Click on the "Add Contract" button to create your first contract
+  = render @contracts

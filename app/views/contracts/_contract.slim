@@ -1,0 +1,19 @@
+= link_to edit_contract_path(contract) do
+  .contract
+    .field
+      b Vendor
+      span
+        = contract.vendor.name
+    .field
+      b Category
+      span
+        = contract.category.name
+    .field
+      b Costs
+      span
+        '$ #{sprintf('%.2f', contract.costs)}
+    .field
+      b Ends on
+      span
+        = contract.ends_on.strftime("%b %d, %Y")
+
