@@ -13,9 +13,10 @@ gem 'puma'
 gem 'sass-rails'
 gem 'slim'
 gem 'uglifier'
+gem 'jquery-rails'
+gem 'coffee-rails'
 
 gem 'bcrypt'
-gem 'coffee-rails'
 
 gem 'bootsnap'
 

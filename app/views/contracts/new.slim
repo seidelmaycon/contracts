@@ -1,7 +1,6 @@
 = form_for @contract do |f|
   - if @contract.errors.any?
     .error_messages
-      h2 Form is invalid
       ul
         - @contract.errors.full_messages.each do |message|
           li
@@ -9,13 +8,11 @@
 
   .field
     = f.label :vendor
-    = f.select :vendor_id, options_for_vendor_select,
-                           { prompt: 'Select a vendor' }
+    = f.collection_select :vendor_id, @vendors, :id, :name, include_blank: true
 
   .field
     = f.label :category
-    = f.select :category_id, options_for_category_select,
-                             { prompt: 'Select a category' }
+    = f.grouped_collection_select :category_id, @vendors, :categories, :name, :id, :name, include_blank: true
 
   .field
     = f.label :costs
