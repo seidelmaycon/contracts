@@ -1,0 +1,29 @@
+= form_for @contract do |f|
+  - if @contract.errors.any?
+    .error_messages
+      h2 Form is invalid
+      ul
+        - @contract.errors.full_messages.each do |message|
+          li
+            = message
+
+  .field
+    = f.label :vendor
+    = f.select :vendor_id, options_for_vendor_select,
+                           { prompt: 'Select a vendor' }
+
+  .field
+    = f.label :category
+    = f.select :category_id, options_for_category_select,
+                             { prompt: 'Select a category' }
+
+  .field
+    = f.label :costs
+    = f.text_field :costs
+
+  .field
+    = f.label :ends_on
+    = f.text_field :ends_on
+
+  .actions
+    = f.submit "Create"
