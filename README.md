@@ -4,7 +4,7 @@
 
 ### Demo
 
-You can check a demo of this application on: https://contracts-app.herokuapp.com
+You can check a live demo of this application on: https://contracts-app.herokuapp.com
 
 ### Configuration
 
