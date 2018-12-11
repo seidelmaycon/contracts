@@ -1,0 +1,27 @@
+= form_for @contract do |f|
+  - if @contract.errors.any?
+    .error_messages
+      ul
+        - @contract.errors.full_messages.each do |message|
+          li
+            = message
+
+  .field
+    = f.label :vendor
+    = f.collection_select :vendor_id, Vendor.all, :id, :name, include_blank: true
+
+  #category_field.hidden
+    .field
+      = f.label :category
+      = f.grouped_collection_select :category_id, Vendor.all, :categories, :name, :id, :name, include_blank: true
+
+  .field
+    = f.label :costs
+    = f.text_field :costs
+
+  .field
+    = f.label :ends_on
+    = f.text_field :ends_on
+
+  .actions
+    = f.submit "Create"

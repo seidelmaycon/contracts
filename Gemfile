@@ -9,13 +9,14 @@ gem 'rails', '5.2.1'
 
 gem 'pg'
 
+gem 'coffee-rails'
+gem 'jquery-rails'
 gem 'puma'
 gem 'sass-rails'
 gem 'slim'
 gem 'uglifier'
 
 gem 'bcrypt'
-gem 'coffee-rails'
 
 gem 'bootsnap'
 
@@ -33,8 +34,8 @@ group :development do
 end
 
 group :test do
-  gem 'rspec-rails'
   gem 'rails-controller-testing'
+  gem 'rspec-rails'
   gem 'shoulda-matchers'
   gem 'simplecov'
 end
