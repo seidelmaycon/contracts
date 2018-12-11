@@ -8,8 +8,6 @@ class ContractsController < ApplicationController
   end
 
   def new
-    @vendors = Vendor.all
-    @categories = Vendor.first.categories
     @contract = Contract.new
   end
 
