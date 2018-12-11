@@ -29,4 +29,7 @@ Run the following commands to setup the database:
 bundle exec rails db:setup
 ```
 
-Then you will be able to run `rails server` and access application on `localhost:3000`
+Then you will be able to run: 
+
+- `rails server` to run the app server to access application on `localhost:3000`.
+- `rspec` to run the unit test suit.
