@@ -2,6 +2,7 @@
 
 class ContractsController < ApplicationController
   before_action :autheticate_user
+  before_action :set_contract, only: [:edit, :update]
 
   def index
     @contracts = @current_user.contracts
@@ -20,7 +21,21 @@ class ContractsController < ApplicationController
     end
   end
 
+  def edit; end
+
+  def update
+    if @contract.update(contract_params)
+      redirect_to contracts_path, notice: 'Your contract was updated'
+    else
+      render :edit
+    end
+  end
+
   private
+
+  def set_contract
+    @contract = Contract.find(params[:id])
+  end
 
   def autheticate_user
     redirect_to signin_path unless logged_in?
