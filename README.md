@@ -32,4 +32,4 @@ bundle exec rails db:setup
 Then you will be able to run: 
 
 - `rails server` to run the app server to access application on `localhost:3000`.
-- `rspec` to run the unit test suit.
+- `rspec -f d` to run the unit test suit (-f d will format as documentation).
