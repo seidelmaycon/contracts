@@ -2,6 +2,10 @@
 
 [![CircleCI](https://circleci.com/gh/seidelmaycon/contracts.svg?style=svg)](https://circleci.com/gh/seidelmaycon/contracts)
 
+### Demo
+
+You can check a demo of this application on: https://contracts-app.herokuapp.com
+
 ### Configuration
 
 #### Dependencies
