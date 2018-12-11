@@ -1,24 +1,28 @@
-# README
+# Contracts App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[![CircleCI](https://circleci.com/gh/seidelmaycon/contracts.svg?style=svg)](https://circleci.com/gh/seidelmaycon/contracts)
 
-Things you may want to cover:
+### Configuration
 
-* Ruby version
+#### Dependencies
 
-* System dependencies
+* [Ruby 2.5.3](https://www.ruby-lang.org)
+* [Bundler 1.17.1+](http://bundler.io)
+* [PostgreSQL 10.6](https://www.postgresql.org)
 
-* Configuration
+#### Installation
 
-* Database creation
+After cloning the repository, access  the folder and install the dependencies:
 
-* Database initialization
+```
+cd contracts && bundle install
+```
 
-* How to run the test suite
+##### Database
 
-* Services (job queues, cache servers, search engines, etc.)
+Run the following commands to setup the database:
+```
+bundle exec rails db:setup
+```
 
-* Deployment instructions
-
-* ...
+Then you will be able to run `rails server` and access application on `localhost:3000`
