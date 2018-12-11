@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       redirect_to root_url, notice: "Welcome back, #{user.first_name}"
     else
       flash.now.alert = "We weren't able to find a user with the specified " \
-                        "email and password combination"
+                        'email and password combination'
       render :new
     end
   end
