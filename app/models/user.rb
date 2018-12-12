@@ -5,6 +5,7 @@ class User < ApplicationRecord
 
   validates :full_name, :email, :password_digest, presence: true
   validates :password, length: { minimum: 8 }
+  validates_uniqueness_of :email
 
   has_many :contracts
 
